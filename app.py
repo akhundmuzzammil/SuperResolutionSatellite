@@ -64,8 +64,6 @@ with st.sidebar:
     2. Click enhance
     3. Download the result
     """)
-    
-    st.markdown("### Made with ❤️ by Mehroz")
 
 # Main content
 def process_image(image):
@@ -148,6 +146,6 @@ if uploaded_file is not None:
 st.markdown("---")
 st.markdown("""
 <div style='text-align: center'>
-    <p>Built with Streamlit • Powered by SRCNN • Made by Mehroz</p>
+    <p>Built with Streamlit • Powered by SRCNN</p>
 </div>
 """, unsafe_allow_html=True)
