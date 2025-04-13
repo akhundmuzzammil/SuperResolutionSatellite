@@ -47,6 +47,16 @@ st.markdown("<p class='subtitle'>Enhance your satellite imagery using AI</p>", u
 
 # Sidebar
 with st.sidebar:
+    st.sidebar.markdown("""
+    <div>
+        <p>
+            Built with Streamlit by <a href='https://akhundmuzzammil.com' target='_blank'>Muzzammil Akhund</a> 
+            <br>
+            Connect: <a href='https://github.com/akhundmuzzammil' target='_blank'>GitHub</a> 
+             | <a href='https://linkedin.com/in/akhundmuzzammil' target='_blank'>LinkedIn</a>
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
     st.image("https://raw.githubusercontent.com/WarrenGreen/srcnn/master/results/05261_combined.jpg", 
              caption="Sample Enhancement")
     st.markdown("## About")
@@ -64,6 +74,7 @@ with st.sidebar:
     2. Click enhance
     3. Download the result
     """)
+
 
 # Main content
 def process_image(image):
@@ -141,11 +152,3 @@ if uploaded_file is not None:
                             st.session_state['temp_file_path'] = None
                         except:
                             pass
-
-# Footer
-st.markdown("---")
-st.markdown("""
-<div style='text-align: center'>
-    <p>Built with Streamlit • Powered by SRCNN</p>
-</div>
-""", unsafe_allow_html=True)
